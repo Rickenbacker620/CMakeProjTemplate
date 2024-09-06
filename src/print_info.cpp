@@ -1,7 +1,6 @@
 #include <fmt/core.h>
 
-int main()
-{
+int print_info() {
     #if defined(_WIN64) || defined(__x86_64__) || defined(__ppc64__)
         fmt::print("Compiled as x64 (64-bit)\n");
     #elif defined(_WIN32) || defined(__i386__)
@@ -15,6 +14,5 @@ int main()
     #else
         fmt::print("Compiled as Debug\n");
     #endif
-
-    return 0;
+    return 42;
 }
