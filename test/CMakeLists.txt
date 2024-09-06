@@ -1,7 +1,3 @@
-find_package(GTest CONFIG REQUIRED)
-
-enable_testing()
-include(GoogleTest)
 
 add_executable(HelloWorldTest test.cpp)
 
